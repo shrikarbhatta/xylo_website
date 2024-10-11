@@ -1,1 +1,0 @@
-Xylo inventory website
