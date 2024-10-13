@@ -1,51 +1,23 @@
+<script>
+	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+</script>
+
 <!--========== HEADER ==========-->
-<header class="l-header" id="header">
-	<nav class="nav bd-container">
-		<a href="/" class="nav__logo">XYLO</a>
-
-		<div class="nav__menu" id="nav-menu">
-			<ul class="nav__list">
-				<li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-				<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-				<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-				<li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-				<li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
-				<li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
-			</ul>
-		</div>
-
-		<div class="nav__toggle" id="nav-toggle">
-			<i class="bx bx-menu"></i>
-		</div>
-	</nav>
-</header>
+<Navbar>
+	<NavBrand href="/">
+		<img src="assets/images/xylo-logo.png" class="me-3 h-12 sm:h-16" alt="Xylo Logo" />
+		<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Xylo</span>
+	</NavBrand>
+	<NavHamburger />
+	<NavUl>
+		<NavLi href="/about">About</NavLi>
+		<NavLi href="/docs/components/navbar">Services</NavLi>
+		<NavLi href="/pricing">Clients</NavLi>
+		<NavLi href="/contact">Contact Us</NavLi>
+	</NavUl>
+</Navbar>
 
 <main class="l-main">
-	<!--========== HOME ==========-->
-	<section class="home" id="home">
-		<div class="home__container bd-container bd-grid">
-			<div class="home__data">
-				<h1 class="home__title">Xylo</h1>
-				<h2 class="home__subtitle">Simplify your<br />inventory.</h2>
-				<a href="#services" class="button">View Services</a>
-			</div>
-			<img src="assets/images/xylo-logo.png" alt="" class="home__img" />
-		</div>
-	</section>
-
-	<!--========== ABOUT ==========-->
-	<section class="about section bd-container" id="about">
-		<span class="section-subtitle">Introducing</span>
-		<h2 class="section-title">XyloBalance</h2>
-		<p class="about__description">
-			XyloBalance is at the forefront of revolutionizing the way we weigh and measure. With our
-			innovative approach and cutting-edge technology, we deliver unparalleled accuracy and
-			efficiency in weight measurement. Our mission is to empower businesses and individuals alike
-			with reliable tools that enhance productivity and ensure quality control.
-		</p>
-		<a href="#contact" class="button">Learn More</a>
-	</section>
-
 	<!--========== TEAM ==========-->
 	<section class="team section bd-container" id="team">
 		<span class="section-subtitle">Meet our team</span>
