@@ -19,11 +19,13 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"deploy": "npm build && npx gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.30.0",
 		"@sveltejs/adapter-auto": "2.0.0",
+		"@sveltejs/adapter-static": "^3.0.5",
 		"@sveltejs/kit": "1.7.2",
 		"@typescript-eslint/eslint-plugin": "^5.52.0",
 		"@typescript-eslint/parser": "^5.52.0",
@@ -34,6 +36,7 @@
 		"flowbite": "^1.6.3",
 		"flowbite-svelte": "^0.29.13",
 		"flowbite-svelte-blocks": "^0.1.6",
+		"gh-pages": "^6.2.0",
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.4",
 		"prettier-plugin-svelte": "^2.9.0",
@@ -61,5 +64,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/shinokada/flowbite-svelte-starter.git"
+	},
+	"dependencies": {
+		"flowbite-svelte-icons": "^1.6.2"
 	}
 }

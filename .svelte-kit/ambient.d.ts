@@ -43,6 +43,7 @@ declare module '$env/static/private' {
 	export const MallocNanoZone: string;
 	export const COLOR: string;
 	export const npm_config_noproxy: string;
+	export const npm_config_registry: string;
 	export const npm_config_local_prefix: string;
 	export const USER: string;
 	export const COMMAND_MODE: string;
@@ -136,6 +137,7 @@ declare module '$env/dynamic/private' {
 		MallocNanoZone: string;
 		COLOR: string;
 		npm_config_noproxy: string;
+		npm_config_registry: string;
 		npm_config_local_prefix: string;
 		USER: string;
 		COMMAND_MODE: string;
