@@ -15,7 +15,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
   />
-  <link rel="stylesheet" href="../app.css" />
+  <link rel="stylesheet" href="/app.css" />
 
   <title>Xylo</title>
 </head>

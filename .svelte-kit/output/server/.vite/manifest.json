@@ -51,9 +51,6 @@
     "isEntry": true,
     "imports": [
       "_ssr.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout.CIkBg-U9.css"
     ]
   },
   "src/routes/+layout.ts": {
