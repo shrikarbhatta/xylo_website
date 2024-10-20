@@ -1,20 +1,16 @@
 import adapter from '@sveltejs/adapter-static'
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import { preprocess } from '@sveltejs/kit'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  preprocess: preprocess(),
+
   kit: {
-    adapter: adapter({
-      fallback: '404.html'
-    }),
+    adapter: adapter(),
     paths: {
-      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-    },
-    prerender: {
-      handleMissingId: 'ignore'
+      base: process.env.NODE_ENV === 'production' ? '/xylo_website' : ''
     }
-  },
-  preprocess: vitePreprocess()
+  }
 }
 
 export default config
