@@ -15,7 +15,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
   />
-  <link rel="stylesheet" href="src/app.css" />
+  <link rel="stylesheet" href="../app.css" />
 
   <title>Xylo</title>
 </head>
@@ -85,11 +85,6 @@
       <h2 class="section-title">Dedicated Professionals</h2>
       <div class="team__container bd-grid">
         <div class="team__member">
-          <img
-            src="path/to/team-member1.jpg"
-            alt="Team Member 1"
-            class="team__img"
-          />
           <h3 class="team__name">John Doe</h3>
           <p class="team__role">CEO & Founder</p>
           <p class="team__description">
@@ -99,11 +94,6 @@
         </div>
 
         <div class="team__member">
-          <img
-            src="path/to/team-member2.jpg"
-            alt="Team Member 2"
-            class="team__img"
-          />
           <h3 class="team__name">Jane Smith</h3>
           <p class="team__role">Chief Technology Officer</p>
           <p class="team__description">
@@ -113,11 +103,6 @@
         </div>
 
         <div class="team__member">
-          <img
-            src="path/to/team-member3.jpg"
-            alt="Team Member 3"
-            class="team__img"
-          />
           <h3 class="team__name">Emily Johnson</h3>
           <p class="team__role">Marketing Director</p>
           <p class="team__description">
