@@ -1,8 +1,12 @@
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+  <link rel="icon" type="image/png" href="{base}/assets/images/favicon.ico" />
 
   <!--========== BOX ICONS ==========-->
   <link
@@ -15,7 +19,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
   />
-  <link rel="stylesheet" href="src/app.css" />
+  <link rel="stylesheet" href="{base}/src/app.css" />
 
   <title>Xylo</title>
 </head>
@@ -23,24 +27,24 @@
   <!--========== HEADER ==========-->
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="/" class="nav__logo">XYLO</a>
+      <a href="{base}/" class="nav__logo">XYLO</a>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">Home</a>
+            <a href="{base}/home" class="nav__link active-link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="{base}/" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">Services</a>
+            <a href="{base}/services" class="nav__link">Services</a>
           </li>
           <li class="nav__item">
-            <a href="#clients" class="nav__link">Clients</a>
+            <a href="{base}/clients" class="nav__link">Clients</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact us</a>
+            <a href="{base}/contact" class="nav__link">Contact us</a>
           </li>
           <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
         </ul>
@@ -59,7 +63,7 @@
         <div class="home__data">
           <h1 class="home__title">Xylo</h1>
           <h2 class="home__subtitle">Simplify your<br />inventory.</h2>
-          <a href="#services" class="button">View Services</a>
+          <a href="{base}/services" class="button">View Services</a>
         </div>
         <img src="assets/images/xylo-logo.png" alt="" class="home__img" />
       </div>
@@ -76,7 +80,7 @@
         mission is to empower businesses and individuals alike with reliable
         tools that enhance productivity and ensure quality control.
       </p>
-      <a href="#contact" class="button">Learn More</a>
+      <a href="{base}/contact" class="button">Learn More</a>
     </section>
 
     <!--========== TEAM ==========-->

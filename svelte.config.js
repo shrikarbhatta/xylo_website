@@ -1,14 +1,13 @@
 import adapter from '@sveltejs/adapter-static'
-import { preprocess } from '@sveltejs/kit'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: preprocess(),
-
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: '404.html'
+    }),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/xylo_website' : ''
+      base: process.argv.includes('dev') ? '' : '/xylo_website'
     }
   }
 }
